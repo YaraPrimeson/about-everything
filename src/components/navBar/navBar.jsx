@@ -6,7 +6,7 @@ const NavBar = () => {
     <div>
       <div>
         <Link to="drag-and-drop" style={{ textDecoration: "none" }}>
-          <Button color="primary" className="open-btn">
+          <Button color="secondary" className="open-btn">
             Drag And Drop
           </Button>
         </Link>
@@ -18,6 +18,20 @@ const NavBar = () => {
           </Button>
         </Link>
       </div>
+      <div>
+        <Link to="/todo" style={{ textDecoration: "none" }}>
+          <Button color="secondary" className="open-btn">
+            to do
+          </Button>
+        </Link>
+      </div>
+      {/* <div>
+        <Link to="/mytodos" style={{ textDecoration: "none" }}>
+          <Button color="secondary" className="open-btn">
+            my to do
+          </Button>
+        </Link>
+      </div> */}
     </div>
   );
 };

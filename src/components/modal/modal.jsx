@@ -1,7 +1,12 @@
 import { useState } from "react";
 import "./modal.css";
 
-const Modal = ({ active, setActive, children }) => {
+const Modal = ({ active, setActive, children, handleClose }) => {
+  const handleClick = (currentTarget, target) => {
+    if (target === currentTarget) {
+      handleClose();
+    }
+  };
   return (
     <div
       className={active ? "modal active" : "modal"}
@@ -11,7 +16,6 @@ const Modal = ({ active, setActive, children }) => {
         className={active ? "modal__content active" : "modal__content"}
         onClick={(e) => e.stopPropagation()}
       >
-        <button className="close">x</button>
         {children}
       </div>
     </div>

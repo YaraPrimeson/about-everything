@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.dragSecond {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.board {
+  min-width: 380px;
+  min-height: 400px;
+  border: 5px solid lightgrey;
+  padding: 20px 10px;
+  margin: 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: column;
+}
+
+.board__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.item {
+  width: 100%;
+  border: 2px solid lightgrey;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  cursor: grab;
+  background-color: #fcfcf9;
+}

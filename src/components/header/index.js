@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Modal } from "../modal/modal";
 import Button from "@material-ui/core/Button";
 import "./header.css";
+import { Count } from "../../pages/Count/Count";
 const Header = () => {
   const [count, setCount] = useState(0);
   const [modalActive, setModalActive] = useState(false);
@@ -17,10 +18,10 @@ const Header = () => {
         </Button>
         <Modal active={modalActive} setActive={setModalActive}>
           <div className="hello">
-            hello
-            <p className="number">{count}</p>
+            <Count />
+            {/* <p className="number">{count}</p>
             <button onClick={() => setCount(count + 1)}>+</button>
-            <button onClick={() => setCount(count - 1)}>-</button>
+            <button onClick={() => setCount(count - 1)}>-</button> */}
           </div>
         </Modal>
       </div>
